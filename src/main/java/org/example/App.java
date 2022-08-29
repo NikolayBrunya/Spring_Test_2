@@ -13,10 +13,6 @@ public class App
 
            AutoFactory autoFactory = ctx.getBean("autoFactory", AutoFactory.class);
            autoFactory.run();
-           autoFactory.run();
-
-
-// test
 
            System.out.println("Num cars:" + autoFactory.getNumCars());
 

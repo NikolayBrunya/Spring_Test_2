@@ -17,9 +17,12 @@ public class AutoFactory {
 
     public void run() {
         int i = 0;
+        Car new_car;
         while (i < productionSize) {
-
-            cars.add( productionLine.work() );
+            new_car = productionLine.work();
+            if (new_car.isPartsDelivered()) {
+                cars.add(new_car);
+            }
             i++;
         }
     }

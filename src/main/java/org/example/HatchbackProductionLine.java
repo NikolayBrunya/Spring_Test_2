@@ -4,6 +4,6 @@ public class HatchbackProductionLine implements ProductionLine{
 
     @Override
     public Car work() {
-        return new Car("Hatchback");
+        return new Car("Hatchback", ProductionLine.getPartsDelivery());
     }
 }
