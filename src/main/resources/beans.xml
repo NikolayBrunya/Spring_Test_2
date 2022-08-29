@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="org.example"/>
     <!-- bean definitions here -->
-    <bean id="autoFactory" class="org.example.AutoFactory">
-        <constructor-arg index="0" value="15"/>
-        <constructor-arg index="1" ref="hatchback_production_line"/>
-    </bean>
-    <bean id="autoFactory1" class="org.example.AutoFactory">
-        <constructor-arg index="0" value="9"/>
-        <constructor-arg index="1" ref="sedan_production_line"/>
-    </bean>
-    <bean id="hatchback_production_line" class="org.example.HatchbackProductionLine"/>
-    <bean id="sedan_production_line" class="org.example.SedanProductionLine"/>
+<!--    <bean id="autoFactory" class="org.example.AutoFactory">-->
+<!--        <constructor-arg index="0" value="15"/>-->
+<!--        <constructor-arg index="1" ref="hatchback_production_line"/>-->
+<!--    </bean>-->
+<!--    <bean id="autoFactory1" class="org.example.AutoFactory">-->
+<!--        <constructor-arg index="0" value="9"/>-->
+<!--        <constructor-arg index="1" ref="sedan_production_line"/>-->
+<!--    </bean>-->
+<!--    <bean id="hatchback_production_line" class="org.example.HatchbackProductionLine"/>-->
+<!--    <bean id="sedan_production_line" class="org.example.SedanProductionLine"/>-->
 
 
 
